@@ -28,3 +28,25 @@ To install the Python packages listed in a `requirements.txt` file, you can use 
     ```
     pip install -r requirements.txt
     ```
+
+## Brief Explanation of Parameters
+
+### Learning Rate (`lr`)
+
+- **Purpose:** Determines how quickly the agent updates its knowledge.
+- **Impact:** A higher learning rate leads to rapid adoption of new information, while a lower rate results in greater reliance on past knowledge.
+
+### Epsilon (`epsilon`)
+
+- **Purpose:** Controls the balance between exploration (trying new routes) and exploitation (using known routes).
+- **Impact:** A higher epsilon value encourages more exploration.
+
+### Epsilon Decay (`epsilon_decay`)
+
+- **Purpose:** Gradually reduces the value of epsilon over time.
+- **Impact:** Leads the agent to shift from exploring new routes to exploiting the best-known routes.
+
+### Epsilon Minimum (`epsilon_min`)
+
+- **Purpose:** Sets the lowest possible value for epsilon.
+- **Impact:** Ensures that there's always some level of exploration, regardless of the agent's experience.
