@@ -8,7 +8,6 @@ The AI uses a technique called Q-learning to help a "traveling salesperson" find
 
 ```
 git clone https://github.com/Stavanger-AI/workshop1.git
-
 ```
 
 or download the zip file
