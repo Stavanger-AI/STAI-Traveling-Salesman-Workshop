@@ -14,34 +14,8 @@ def generate_random_city_locations(num_cities):
     return city_locations
 
 
-# Example of generating 10 random city locations
-# random_city_locations = generate_random_city_locations(10)
 
-# You can change the argument (10 in this example) to generate a different number of random city locations.
-# You can also change the range of the random numbers to generate cities in a different area.
 
-fixed_city_locations = [
-    (100, 100),
-    (200, 150),
-    (320, 200),
-    (450, 350),
-    (500, 500),
-    (100, 300),
-    (250, 400),
-    (300, 100),
-    (400, 250),
-    (500, 350),
-    (100, 500),
-    (200, 100),
-    (350, 400),
-    (400, 300),
-    (500, 100),
-    (150, 250),
-    (250, 150),
-    (350, 450),
-    (450, 350),
-    (50, 450),
-]
 
 
 class Agent:
@@ -373,9 +347,7 @@ def start_training():
     # Get parameters from the settings frame
     params = settings_frame.get_parameters()
 
-    # Get the first N city locations from the fixed_city_locations list
     n_cities = params["n_stops"]
-    # cities = fixed_city_locations[:n_cities]
     cities = generate_random_city_locations(n_cities)
 
     env = DeliveryEnvironment(stops=cities)

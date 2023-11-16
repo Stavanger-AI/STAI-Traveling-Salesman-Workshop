@@ -10,12 +10,6 @@ def generate_random_city_locations(num_cities):
     city_locations = [(random.randint(50, 450), random.randint(50, 450)) for _ in range(num_cities)]
     return city_locations
 
-# Example of generating 10 random city locations
-# random_city_locations = generate_random_city_locations(10)
-
-# You can change the argument (10 in this example) to generate a different number of random city locations.
-# You can also change the range of the random numbers to generate cities in a different area.
-
 fixed_city_locations = [
     (100, 100),
     (200, 150),
